@@ -40,13 +40,13 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: mongodb
+  name: catalogue
   namespace: roboshop
 spec:
   selector:
-    app: mongodb
+    app: catalogue
     project: roboshop
-    tier: db
+    tier: app
   ports:
   - protocol: TCP
     port: 8080 #service-port

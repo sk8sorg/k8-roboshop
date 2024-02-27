@@ -36,7 +36,7 @@ spec:
         image: joindevops/payment:v1
         imagePullPolicy: Always
         envFrom:
-        - secretRef::
+        - secretRef:
             name: payment
 ---
 apiVersion: v1
